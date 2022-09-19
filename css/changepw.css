@@ -1,0 +1,10 @@
+.on{
+    display: block !important;
+}
+.passwordchk{
+    display: none;
+    width: 100%;
+    font-size: 14px;
+    color: #ff5c46;
+    margin-top: 30px;
+}
