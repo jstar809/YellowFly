@@ -1,0 +1,449 @@
+<!-- /*
+* Template Name: Tour
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="./img/favicon.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/search.css" />
+
+    <title>노랑비행 - 계정관리</title>
+  </head>
+
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="site-navigation">
+          <a href="mainpage.html" class="logo m-0">
+            <img src="./img/노랑비행.png" alt="" />
+            <span class="text-primary">.</span></a
+          >
+
+          <ul
+            class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right"
+          >
+            <li class="active"><a href="mainpage.html">Home</a></li>
+            <li class="has-children">
+              <a href="#">게시판</a>
+              <ul class="dropdown">
+                <li><a href="DestinationWorld.html">해외여행 게시판</a></li>
+                <li>
+                  <a href="DestinationKorea.html">국내여행 게시판</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="join.html">회원가입</a></li>
+            <li class="active"><a href="mypage.html">마이페이지</a></li>
+          </ul>
+
+          <a
+            href="#"
+            class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+            data-toggle="collapse"
+            data-target="#main-navbar"
+          >
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!--8월1일 김종현 수정-->
+    <div class="login-inner">
+      <!-- 8월4일 김종현 수정 -->
+      <div id="jointitle">
+        <div id="jointitle1">
+          <h1 class="mb-0"><strong>아이디/비밀번호 찾기</strong></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="wrap">
+      <div>
+        <!-- 아이디, 비밀번호 찾기 -->
+
+        <ul id="searchInner">
+          <li id="searchId" class="searchInfo">
+            <span>아이디 찾기</span>
+          </li>
+          <li id="searchPassword" class="searchInfo">
+            <span>비밀번호 찾기</span>
+          </li>
+        </ul>
+      </div>
+      <div id="Container">
+        <!-- 아이디(이메일) 찾기 -->
+
+        <div id="idBox">
+          <form name="name" action="" method="post">
+            <p id="nameTitle">이름</p>
+            <input
+              name="name"
+              type="text"
+              id="nameInput"
+              placeholder="이름(실명)"
+            />
+
+            <p id="phoneTitle">휴대폰 번호</p>
+            <div id="certificateInner">
+              <input
+                name="phone"
+                type="tel"
+                id="phoneInput"
+                placeholder="휴대폰 번호(숫자만 입력)"
+              />
+              <button type="submit" id="certificateBtn">인증번호 발송</button>
+            </div>
+
+            <div>
+              <button type="submit" id="idSearchBtn" disabled>확인</button>
+            </div>
+          </form>
+
+          <div id="phoneMsg">
+            <p>회원가입 시 등록한 휴대폰 번호를 입력해주세요!</p>
+          </div>
+        </div>
+
+        <!-- 비밀번호 찾기 -->
+
+        <div id="passwordBox">
+          <form name="email" action="" method="post">
+            <p id="emailTitle">이메일</p>
+            <input
+              name="email"
+              type="eamil"
+              id="emailInput"
+              placeholder="이메일 주소"
+            />
+
+            <div>
+              <button type="submit" id="passwordSearchBtn" disabled>
+                확인
+              </button>
+            </div>
+          </form>
+
+          <div id="emailMsg">
+            <p>회원가입 시 등록한 이메일을 입력해주세요!</p>
+          </div>
+        </div>
+
+        <!-- 유효성검사 msg -->
+        <div id="onlyName">올바른 이름의 형식이 아닙니다!</div>
+
+        <div id="onlyNumber">휴대폰 번호는 숫자만 입력해주세요!</div>
+
+        <div id="missing1">
+          <p>이메일에 '@' 문자가 누락되어 있습니다!</p>
+        </div>
+
+        <div id="missing2">
+          <p>이메일에 ' . ' 문자가 누락되어 있습니다!</p>
+        </div>
+
+        <div id="blank">
+          <p>입력하지 않은 항목이 있습니다!</p>
+        </div>
+
+        <div id="short">
+          <p>비밀번호는 8자리 이상 입력해야 합니다!</p>
+        </div>
+        <!--  -->
+
+        <h2 class="subLogin"><span>간편하게 로그인하기</span></h2>
+        <ul id="otherLogin">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+        <h2 class="subLogin"><span>아직 회원이 아니세요?</span></h2>
+        <div id="registerInner">
+          <a id="registerButton" href="./join.html">
+            <span>회원가입</span>
+          </a>
+        </div>
+        <div id="moreService">
+          <p>
+            회원가입을 통해 포인트 적립, 회원전용혜택 등 <br />더 많은 서비스를
+            이용하실 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div id="footer">
+        <address>Ⓒ Yellow Balloon tour. All Rights Reserved.</address>
+      </div>
+    </div>
+
+    <!-- <div class="untree_co-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <form class="contact-form" data-aos="fade-up" data-aos-delay="200">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="fname">First name</label>
+                  <input type="text" class="form-control" id="fname">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group">
+                  <label class="text-black" for="lname">Last name</label>
+                  <input type="text" class="form-control" id="lname">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="text-black" for="email">Email address</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="form-group">
+              <label class="text-black" for="message">Message</label>
+              <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+        <div class="col-lg-5 ml-auto">
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-house"></span>
+            <address class="text">
+              155 Market St #101, Paterson, NJ 07505, United States
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-phone-call"></span>
+            <address class="text">
+              +1 202 2020 200
+            </address>
+          </div>
+          <div class="quick-contact-item d-flex align-items-center mb-4">
+            <span class="flaticon-mail"></span>
+            <address class="text">
+              @info@mydomain.com
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- <div class="untree_co-section testimonial-section mt-5 bg-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 text-center">
+          <h2 class="section-title text-center mb-5">Testimonials</h2>
+
+          <div class="owl-single owl-carousel no-nav">
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Adam Aderson</h3>
+              <blockquote>
+                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Lukas Devlin</h3>
+              <blockquote>
+                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </blockquote>
+            </div>
+
+            <div class="testimonial mx-auto">
+              <figure class="img-wrap">
+                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
+              </figure>
+              <h3 class="name">Kayla Bryant</h3>
+              <blockquote>
+                <p>&ldquo;There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+              </blockquote>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+    <div class="site-footer">
+      <div class="inner first">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading">회사 소개</h3>
+                <p>
+                  대표이사 황지민 <br />서울 강남구 테헤란로26길 12 코리아IT<br />
+                  사업자등록번호 104-81-64440 <br />관광사업자등록증번호
+                  제7777-000001호 <br />통신판매업신고번호 제2022-서울남구-0607
+                </p>
+              </div>
+              <div class="widget">
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/yellowballoon_official/"
+                      target="_blank"
+                      ><span class="icon-instagram"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D5de2c78b-cc96-4673-bf78-c1817ca92fa4%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow"
+                      target="_blank"
+                      ><span class="icon-facebook"></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-dribbble"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-pinterest"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-apple"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-google"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2 pl-lg-5">
+              <div class="widget">
+                <h3 class="heading">회사소개</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">여행약관</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="widget">
+                <h3 class="heading">신문광고</h3>
+                <ul class="links list-unstyled">
+                  <li><a href="#">여행자보험</a></li>
+                  <li><a href="#">대리점안내</a></li>
+                  <li><a href="#">오시는 길</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="widget">
+                <h3 class="heading">Contact</h3>
+                <ul class="list-unstyled quick-info links">
+                  <li class="email"><a href="#">koreaIT@academy.com</a></li>
+                  <li class="phone"><a href="#">02-123-4567</a></li>
+                  <li class="address">
+                    <a href="#">서울시 강남구 테헤란로26길</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inner dark">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+              <p>
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                . All Rights Reserved. &mdash; Designed with love by
+                <a href="https://untree.co" class="link-highlight"
+                  >Team-Koala</a
+                >
+                <!-- License information: https://untree.co/license/ -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <script src="js/typed.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

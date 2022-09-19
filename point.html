@@ -1,0 +1,412 @@
+<!-- /*
+* Template Name: Tour
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="./img/faviconYP.ico">
+  
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/daterangepicker.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>노랑비행 [여행을 가볍게]</title>
+</head>
+
+<body>
+
+  <!--상단 배너-->
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close">
+        <span class="icofont-close js-menu-toggle"></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+  <nav class="site-nav">
+    <div class="container">
+      <div class="site-navigation">
+        <a href="mainpage.html" class="logo m-0"><img src = "./img/노랑비행.png"><span class="text-primary"></span></a>
+
+        <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+          <li><a href="mainpage.html">Home</a></li>
+          <li class="has-children">
+            <a href="#">게시판</a>
+            <ul class="dropdown">
+              <li>
+                <a href="DestinationWorld.html">해외 게시판</a>
+                <a href="DestinationKorea.html">국내 게시판</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active"><a href="login.html">로그인</a></li>
+          <li><a href="join.html">회원가입</a></li>
+          <li><a href="mypage.html">마이페이지</a></li>
+        </ul>
+
+        <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
+          data-toggle="collapse" data-target="#main-navbar">
+          <span></span>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--인삿말-->
+  <div class="hero hero-inner myPageMainBox1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mx-auto text-center">
+          <div class="myPageIntro">
+            <h1 class="myPageIntroMent">안녕하세요, 노랑풍선 <span class="myPageFontBlue">Family</span><span
+                class="myPageFontBlack"> 황지민님!</span></h1>
+            <p class="mypageIntroMentNO.1">대한민국 NO.1 여행사 노랑풍선에 오신 것을 환영합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--포인트 이용내역-->
+  <div class="myPageMainMenu2">
+    <div class="container">
+      <div class="reservationMenuBox">
+        <ul class="reservationMenu" id="firstJourney">
+          <li class="destination firstPlace pointUseHistory">
+            <span><a class="menuButton" href="reservation_detail.html">포인트 이용내역</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="tableviewout">
+        <div class="tableview">
+          <div class="tablecancellook">
+            <ul class="reservation_point">
+              <table id="products">
+                <caption>
+                  <form action="" id="setRows">
+                    <p>
+
+                      <input type="text" name="rowPerPage" value="10">
+
+                    </p>
+                  </form>
+
+                </caption>
+
+                <thead>
+                  <tr class="pointtr">
+                    <th>번호</th>
+                    <th>일자</th>
+                    <th>구분</th>
+                    <th>상세내용</th>
+                    <th>사용포인트</th>
+                    <th>적립포인트</th>
+                    <th>남은 포인트</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>2022.01.01</td>
+                    <td>재팬맨</td>
+                    <td>2022.01.07</td>
+                    <td>3명</td>
+                    <td>1,499,000원</td>
+                    <td>0원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>2022.05.05</td>
+                    <td>불란서</td>
+                    <td>2022.06.06</td>
+                    <td>2명</td>
+                    <td>3,400,000원</td>
+                    <td>1,400원</td>
+
+                  </tr>
+                </tbody>
+
+              </table>
+
+            </ul>
+            <div class="d-flex">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="site-footer">
+    <div class="inner first">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">회사 소개</h3>
+              <p>
+                대표이사 황지민 <br />서울 강남구 테헤란로26길 12 코리아IT<br />
+                사업자등록번호 104-81-64440 <br />관광사업자등록증번호
+                제7777-000001호 <br />통신판매업신고번호 제2022-서울남구-0607
+              </p>
+            </div>
+            <div class="widget">
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/yellowballoon_official/" target="_blank"><span
+                      class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fprivacy%2Fconsent%2Fpipa%2F%3Fparams%255Bpft_surface%255D%3Dfacebook_comet%26params%255Bis_new_user_blocking_flow%255D%3Dfalse%26params%255Bpft_session_key%255D%3D5de2c78b-cc96-4673-bf78-c1817ca92fa4%26params%255Bis_existing_user_blocking_flow%255D%26source%3Dpipa_blocking_flow"
+                    target="_blank"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-dribbble"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-pinterest"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-apple"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-google"></span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 pl-lg-5">
+            <div class="widget">
+              <h3 class="heading">회사소개</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">여행약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2">
+            <div class="widget">
+              <h3 class="heading">신문광고</h3>
+              <ul class="links list-unstyled">
+                <li><a href="#">여행자보험</a></li>
+                <li><a href="#">대리점안내</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="widget">
+              <h3 class="heading">Contact</h3>
+              <ul class="list-unstyled quick-info links">
+                <li class="email"><a href="#">koreaIT@academy.com</a></li>
+                <li class="phone"><a href="#">02-123-4567</a></li>
+                <li class="address">
+                  <a href="#">서울시 강남구 테헤란로26길</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner dark">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-8 mb-3 mb-md-0 mx-auto">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved. &mdash; Designed with love by
+              <a href="https://untree.co" class="link-highlight">Team-Koala</a>
+              <!-- License information: https://untree.co/license/ -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/paging.js"></script>
+
+  <script src="js/typed.js"></script>
+  <script>
+    $(function () {
+      var slides = $(".slides"),
+        images = slides.find("img");
+
+      images.each(function (i) {
+        $(this).attr("data-id", i + 1);
+      });
+
+      var typed = new Typed(".typed-words", {
+        strings: [
+          "San Francisco.",
+          " Paris.",
+          " New Zealand.",
+          " Maui.",
+          " London.",
+        ],
+        typeSpeed: 80,
+        backSpeed: 80,
+        backDelay: 4000,
+        startDelay: 1000,
+        loop: true,
+        showCursor: true,
+        preStringTyped: (arrayPos, self) => {
+          arrayPos++;
+          console.log(arrayPos);
+          $(".slides img").removeClass("active");
+          $('.slides img[data-id="' + arrayPos + '"]').addClass("active");
+        },
+      });
+    });
+  </script>
+
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
